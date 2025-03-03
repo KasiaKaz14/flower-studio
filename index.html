@@ -1,38 +1,123 @@
 <!DOCTYPE html>
 <html lang="pl">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mobilne Menu</title>
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body>
-
-    <header>  
-        <img src="./img/logo.png" alt="Logo of the company" class="header__logo">
-        <nav class="nav">
-            <img src="./img/tel.png" alt="Phone Icon" class="header__phone">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Flower Studio</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100..900;1,100..900&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="styles.css" />
+  </head>
+  <body>
+    <header>
+      <img
+        src="./img/logo.png"
+        alt="Logo of the company"
+        class="header__logo"
+      />
+      <nav class="nav">
+        <img src="./img/tel.png" alt="Phone Icon" class="header__phone" />
         <div class="menu-toggle" id="menu-toggle">
-            <div class="bar"></div>
-            <div class="bar"></div>
-            <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
+          <div class="bar"></div>
         </div>
-    </nav>
-</header>
+      </nav>
+    </header>
+    <main>
+      <section class="main__main">
+        <section class="main">
+          <p class="main__desc">flower studio</p>
+          <picture>
+            <source
+              srcset="./img/mobile-main-photo.jpg"
+              media="(min-width: 480px)"
+            />
+            <source
+              srcset="./img/main-tablet.jpg"
+              media="(min-width: 768px)"
+            />
+            <source
+              srcset="./img/main-desktop.jpg"
+              media="(min-width: 1200px)"
+            />
+            <img
+              src="./img/mobile-main-photo.jpg"
+              alt="zdjęcie product designera"
+              class="main__photo"
+            />
+          </picture>
+          <img
+            src="./img/main-flower-btn.jpg"
+            alt="Button Shop Now"
+            class="main__shop-btn"
+          />
+          <section>
+            <h1 class="main__title">ANEMONE</h1>
+          </section>
+        </section>
+      </section>
 
-  
+      <section id="about" class="about">
+<section class="about__about">
+    <h1 class="about__title">ABOUT</h1>
+    <p class="about__border"></p>
+</section>
+        <p class="about__desc">
+          We are a minimalistic flower studio. We love people and flowers.
+          Therefore, every day we give people the beauty and joy creating
+          stylish and modern masterpieces. Every bouquet we create is unique as
+          you are.
+        </p>
+        <img src="./img/about-desktop.jpg" alt="Flowers" class="about__img">
+      </section>
+
+      <section id="store" class="store">
+        <section class="store__store">
+            <h1 class="store__title">STORE</h1>
+            <p class="store__border"></p>
+        </section>
+        <ul class="store__list">
+            <li class="store__list-element">
+                <img src="./img/bouquet3.jpg" alt="Bouquet of flowers" class="store__img">
+                <p>compliments</p>
+                <p>from $15</p>
+            </li>
+            <li class="store__list-element">
+               <img src="./img/bouquet1.jpg" alt="Bouquet of flowers" class="store__img">
+                <p>bouquets size S</p>
+                <p>from $25</p>
+            </li>
+            <li class="store__list-element">
+                <img src="./img/bouquet2.jpg" alt="Bouquet of flowers" class="store__img">
+                <p>bouquets size M</p>
+                <p>from $45</p>
+            </li>
+            <li class="store__list-element">
+                <img src="./img/bouquet4.jpg" alt="Bouquet of flowers" class="store__img">
+                <p>bouquets size L</p>
+                <p>from $60</p>
+            </li>
+        </ul>
+        <button type="submit" class="store__button">Order flowers</button>
+      </section>
+    </main>
 
     <div class="menu" id="menu">
-        <button class="close-btn" id="close-btn">&times;</button>
-        <ul>
-            <li><a href="#">Anemone</a></li>
-            <li><a href="#">About us</a></li>
-            <li><a href="#">Store</a></li>
-            <li><a href="#">Delivery</a></li>
-            <li><a href="#">Blog</a></li>
-        </ul>
+      <button class="close-btn" id="close-btn">&times;</button>
+      <ul>
+        <li><a href="./index.html">Anemone</a></li>
+        <li><a href="#about">About us</a></li>
+        <li><a href="#store">Store</a></li>
+        <li><a href="#delivery">Delivery</a></li>
+        <li><a href="#blog">Blog</a></li>
+      </ul>
     </div>
 
     <script src="./js/mobile-menu.js"></script>
-</body>
+  </body>
 </html>
